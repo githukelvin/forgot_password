@@ -1,0 +1,39 @@
+@use "config" as *;
+@use "./about";
+@use "./home";
+@use "./footer";
+
+header {
+  width: 100%;
+  height: 100px;
+}
+.navBar {
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  .logo {
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #032335;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    text-transform: uppercase;
+    li a {
+      font-size: 0.9em;
+    font-weight: 600;
+      font-family: $Trispace;
+      color: #1d2d44;
+      &:hover{
+        color:#23395b;
+        font-family: $opensans;
+        font-weight: 700;
+      }
+    }
+  }
+}

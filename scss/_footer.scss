@@ -1,0 +1,104 @@
+@use "./config";
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&family=Xanh+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700;800&display=swap");
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+}
+.partners {
+  width: 100%;
+  h1 {
+    text-align: center;
+    font-family: "Work Sans", sans-serif;
+    color: #011502;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+}
+.foots {
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+  gap: 3em;
+  .first {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 3em;
+    ul li {
+      padding-block: 0.5em;
+    }
+    ul li a {
+      color: #232020;
+      font-size: 18px;
+      font-family: 'Xanh Mono', monospace;
+      display: flex;
+      font-weight: 600;
+      text-transform: capitalize;
+      flex-direction: row;
+      gap: 0.9em;
+      padding-bottom: 0.5em;
+      position: relative;
+
+      &:hover {
+       color: #495867;
+        &::after {
+          content: "";
+          width: 100%;
+          background: #90e0ef;
+          position: absolute;
+          bottom: 0;
+          height: 3px;
+          transition: transform 5s ease-in;
+        }
+      }
+    }
+  }
+
+  .second {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 2em;
+    margin-top: 3em;
+
+    img {
+      width: 200px;
+    }
+  }
+  .socials {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 3em;
+    position: relative;
+    ul li a {
+      display: flex;
+      flex-direction: row;
+      font-family: 'Xanh Mono', monospace;
+      font-weight: 600;
+      text-transform: capitalize;
+      color: #100b00;
+    position: relative;
+    font-size: 18px;
+      gap: 0.9em;
+      padding-block: 0.5em;
+
+      
+      &:hover {
+        color:#102e4a;
+        &::after {
+          content: "";
+          width: 100%;
+          background: #caf0f8;
+          position: absolute;
+          bottom: 0;
+          height: 3px;
+          transition: transform 5s ease-in;
+        }
+      }
+    }
+  }
+}
