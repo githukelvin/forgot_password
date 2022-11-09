@@ -34,7 +34,74 @@ include "./partials/header.php"
 </div>
  
 </div>
+<div class="container" >
+    <div class="description">
+        <h1>#DESCRIPTION</h1>
+        <div class="overlay">
+        <h2>About Project</h2>
+        <h2>About Project</h2>
+        </div>
+        <div class="info">
+        <h3>This  is  a PHP Project </h3>
+        <p>Hello  this  is  a php  project  to test my skills  on php  .What  you should  expect from this  project:👇👇👇</p>
+        <ul>
+            <li>1 : Login Functionality</li>
+            <li>2 : Sign Up Functionality</li>
+            <li>3 : Verification  Setup</li>
+            <li>4 : Session  Setting</li>
+            <li>5 : JavaScript Inputs Verification </li>
+            <li>6 : Forgot Password Module</li>
+            <li>7 : Brief  of Crud Operations</li>
+            <li>8 : Mobile Responsiveness</li>
+            <li>9 : Mailing Functionality</li>
 
+        </ul>
+   <p>This  project  was not intended  to be frontend  but  i tried  my best to create .Beautiful
+   user interface .
+</p>
+<p>This Project is created  using  the  following Programming languages</p>
+     <ul class="lang">
+        <li>
+            <i class="devicon-vscode-plain colored"></i>
+          VScode Editor
+</li>
+<li>
+            <i class="devicon-apache-plain-wordmark colored"></i>
+          Apache Server
+</li>
+<li>
+            <i class="devicon-css3-plain-wordmark colored"></i>
+          css3
+</li>
+<li>
+            <i class="devicon-html5-plain-wordmark colored"></i>
+          html5</li>
+          <li>
+            <i class="devicon-sass-original colored"></i>
+          sass</li>
+          <li>
+            <i class="devicon-php-plain colored"></i>
+          php</li>
+          
+          <li>
+            <i class="devicon-javascript-plain colored"></i>
+          JavaScript
+</li>
+<li>
+            <i class="devicon-github-original-wordmark colored"></i>
+          github</li>
+          <li>
+            <i class="devicon-firefox-plain-wordmark colored"></i>
+          firefox</li>
+          <li>
+            <i class="devicon-git-plain-wordmark colored"></i>
+          GIT</li>
+     </ul>  
+</div>
+    </div>
+
+
+</div
 
 
 

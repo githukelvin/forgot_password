@@ -1,73 +1,185 @@
 @import url("https://fonts.googleapis.com/css2?family=Poor+Story&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
 main {
   font-family: "Poor Story", cursive;
   min-height: 100vh;
-  margin-block:3em;
+  margin-top: 6em;
+  margin-bottom: 3em;
+  height: 100%;
+  overflow-y: auto;
+
 }
 .info-me {
   display: grid;
-  grid-template-columns: .9fr 2fr;
+  grid-template-columns: 0.9fr 2fr;
   gap: 3em;
- 
-  .details{
+
+  .details {
     font-size: 2rem;
     font-weight: 500;
-    p{
-        display: flex;
-        float: row;
-        gap:1em;
-        margin-bottom: 1em;
-        
+    p {
+      display: flex;
+      float: row;
+      gap: 1em;
+      margin-bottom: 1em;
     }
   }
 }
-.img{
-    position: relative;
-    width:100%;
-    height: fit-content;
-    display: grid;
-    place-items: center;
-        border-radius: 20px;
-        overflow: hidden;
-    // background-color: #000;
-    img {
-        width: 97%;
-        height: 97%;
-        border-radius: 20px;
-      }
-.left{
+.img {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+  // background-color: #000;
+  img {
+    width: 97%;
+    height: 97%;
+    border-radius: 20px;
+  }
+  .left {
     width: 800px;
     position: absolute;
-  overflow: hidden;
-    height: 150px ;
+    overflow: hidden;
+    height: 150px;
     z-index: -33;
-animation: left 3s linear infinite;
+    animation: left 3s linear infinite;
     transform: rotate(-90deg);
-  background-image: linear-gradient(to left,#44e5e7,#5c7aff,#59d2fe,#73fbd3);
-}
-.right{
+    background-image: linear-gradient(
+      to left,
+      #44e5e7,
+      #5c7aff,
+      #59d2fe,
+      #73fbd3
+    );
+  }
+  .right {
     width: 700px;
-    height: 150px ;
+    height: 150px;
     z-index: -22;
     animation: right 5s linear infinite;
     position: absolute;
-background-image: linear-gradient(to left,#e2afff,#d0d1ff,#ffcbf2,#e5b3fe);
-}
+    background-image: linear-gradient(
+      to left,
+      #e2afff,
+      #d0d1ff,
+      #ffcbf2,
+      #e5b3fe
+    );
+  }
 }
 @keyframes right {
-   0%{
+  0% {
     transform: rotate(0deg);
-   } 
-   100%{
+  }
+  100% {
     transform: rotate(360deg);
-   }
+  }
 }
 @keyframes left {
-    0%{
-        transform: rotate(0deg);
-       } 
-       100%{
-        transform: rotate(-360deg);
-       } 
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.description {
+  margin-block: 2em;
+  padding-bottom: 3em;
+  h1 {
+    // text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 800;
+    font-size: 2em;
+  }
+  .overlay {
+    width: 100%;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "PT Sans", sans-serif;
+      &:nth-child(1) {
+        font-size: 5em;
+        background: linear-gradient(to top, transparent 0%, #73fbd3 70%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0.5;
+      }
+      &:nth-child(2) {
+        position: relative;
+        top: -50px;
+        color: #081c15;
+        font-family: "PT Sans", sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .info {
+    font-family: "Roboto", sans-serif;
+    width: fit-content;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    h3 {
+      font-size: 700;
+      font-size: 2em;
+      text-transform: capitalize;
+      margin-block: 1em;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #040403;
+    }
+    ul {
+      font-weight: 600;
+      font-size: 1.5em;
+      margin-left: 200px;
+      // padding-top: 1em;
+      margin-block: 2em;
+    }
+    .lang {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      margin: 0;
+      gap: 2em;
+      margin-top: 2em;
+
+      li {
+        display: flex;
+        gap: .5em;
+        flex-direction: row;
+          font-family: 'Rubik Bubbles', cursive;
+          color: #1565c0;
+        font-size: 1em;
+        font-weight: 500;
+        align-items: center;
+        transition: all 1s ease;
+        width: 100%;
+        cursor: pointer;
+        text-transform: uppercase;
+        i{
+          font-size: 3rem;
+        }
+        .devicon-sass-original{
+          color: rgba($color: red, $alpha: .8);
+        }
+        &:hover{
+          font-family: "Ubuntu", sans-serif;
+          transition: all .5s ease;
+          font-size: .8em;
+        }
+      }
+    }
+  }
 }

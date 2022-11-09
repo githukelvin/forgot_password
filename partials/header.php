@@ -17,7 +17,10 @@
 
     <!-- FONTGOOGLE  CDN -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,-25" />
+    <!-- DEVICONS CDN -->
     
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
 </head>
 <body>
     
@@ -30,7 +33,7 @@
             <li><a href="about">about us</a></li>
             <li><a href="contact">contact us</a></li>
             <li><a href="">services</a></li>
-            <li><a href="#login">login</a></li>
+            <li><a href="login">login</a></li>
         </ul>
     </nav>
     </div>
