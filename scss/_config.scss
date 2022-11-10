@@ -14,7 +14,7 @@ $opensans: 'Open Sans', sans-serif;
 }
 $lgcontainer: 75%;
 $mdcontainer:85%;
-$smcontrainer:90%;
+$smcontainer:90%;
 
 .container{
     max-width:1440px;
@@ -26,5 +26,8 @@ body{
     width: 100%;
     min-height: 92vh;
     overflow-x: hidden;
+}
+a:visited{
+    color: #3561cd;
 }
 

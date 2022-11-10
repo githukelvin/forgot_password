@@ -30,7 +30,7 @@ footer {
     ul li {
       padding-block: 0.5em;
     }
-    ul li a {
+    ul li a{
       color: #232020;
       font-size: 18px;
       font-family: 'Xanh Mono', monospace;
@@ -41,9 +41,13 @@ footer {
       gap: 0.9em;
       padding-bottom: 0.5em;
       position: relative;
+      transition: all 5s ease-in;
 
-      &:hover {
+      &:hover{
        color: #495867;
+       letter-spacing: 2px;
+       transition: all 5s ease-in;
+
         &::after {
           content: "";
           width: 100%;
@@ -51,7 +55,7 @@ footer {
           position: absolute;
           bottom: 0;
           height: 3px;
-          transition: transform 5s ease-in;
+          transition: all 5s ease-in;
         }
       }
     }

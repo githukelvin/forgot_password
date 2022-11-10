@@ -15,7 +15,7 @@ description
             <li><a href="./services"> <span class="material-symbols-outlined">
 design_services
 </span>Services</a></li>
-            <li><a href=".index"><i class="fa-solid fa-house-user"></i> Home</a></li>
+            <li><a href="./index"><i class="fa-solid fa-house-user"></i> Home</a></li>
         </ul>
     </div>
     </div>
@@ -59,6 +59,6 @@ design_services
 </div>
   </div>  
 </footer>
-<script src="./assets/js/index.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>

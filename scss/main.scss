@@ -3,6 +3,7 @@
 @use "./home";
 @use "./footer";
 @use "./form";
+@use "./mixin";
 header {
   width: 100%;
   height: 100px;
@@ -13,13 +14,28 @@ header {
   z-index: 111;
   backdrop-filter: blur(20px);
   margin-bottom: 2em;
-
 }
 .navBar {
   display: flex;
   height: 100%;
   justify-content: space-between;
   align-items: center;
+  .ham {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+  }
+  .close{
+    background-image: url("../images/xmark-solid.svg");
+
+  }
+  .open{
+    background-image: url("../images/bars-solid.svg");
+ 
+  }
   .logo {
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -32,16 +48,20 @@ header {
     flex-direction: row;
     gap: 2em;
     text-transform: uppercase;
+
+   
     li a {
       font-size: 0.9em;
-    font-weight: 600;
+      font-weight: 600;
       font-family: $Trispace;
       color: #1d2d44;
-      &:hover{
-        color:#23395b;
+      &:hover {
+        color: #23395b;
         font-family: $opensans;
         font-weight: 700;
       }
     }
   }
+  
 }
+@import "./media";

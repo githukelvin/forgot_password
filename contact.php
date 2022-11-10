@@ -31,7 +31,7 @@
             <div class="form-groups">
               <p>Enter Message :</p>
               <div class="inputs mail">
-                  <textarea name="message" cols="30" rows="10"></textarea>
+                  <textarea placeholder="Write Your Message Here" name="message" cols="30" rows="10"></textarea>
               </div>
             </div>
          

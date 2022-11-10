@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
-@mixin eye {
-  width: 60px;
-  height: 100%;
-  cursor: pointer;
-  background-color: #ccc;
-  background-size: 30px;
-  background-position: center;
-  background-repeat: no-repeat;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
+@import "./mixin";
 
 .forms {
   font-family: "Open Sans", sans-serif;
