@@ -4,15 +4,16 @@
         <h1>Welcome Back Login Here</h1>
 
         <div class="forms">
-          <form action="" autocomplete="off" method="post">
+          <form action="<" autocomplete="off" method="post">
             <div class="form-groups">
               <p>Enter Email :</p>
               <div class="inputs mail">
                 <input
+                class ="mail"
                   type="email"
                   placeholder="Enter Email or Username"
                   name="email"
-                  id=""
+                  id="mal"
                 />
               </div>
             </div>
@@ -34,7 +35,7 @@
          <p><a href="forgot">Forgot Password ?</a></p>
          <p>Don't have account ? <a href="signup">Create Account.</a></p>
          </div>
-            <input type="submit" name="login" value="Login">
+            <input type="submit" class="btn" name="login" value="Login">
           </form>
         </div>
 

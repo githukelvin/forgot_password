@@ -18,6 +18,8 @@ try{
 
 
 
+include "crud.php";
 
+$crud = new crud($pdo);
 
 ?>

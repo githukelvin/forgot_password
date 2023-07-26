@@ -1,11 +1,20 @@
 <?php
-include "./partials/header.php"
+include "./partials/header.php";
+
+// include ""
+
 
 ?>
 
 <div class="container">
 <!-- #region -->
+<?php
+$name="kelvin";
+$dd = "gith";
 
+echo md5($name.$dd);
+
+?>
 <div class="info-me">
 
     <div class="img">
@@ -29,7 +38,7 @@ include "./partials/header.php"
        pursuing  Degree in <strong><em>Computer and Communication Networks</em></strong>             
 </span>
  </p>
-<p> 🈲 <span> I am  Currently in my 3rd Year  in Term  1</p></p>
+<p> 🈲 <span> I am  Currently in my 3rd Year  in Term  1</p>
     </div>
 </div>
  

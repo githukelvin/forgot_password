@@ -3,7 +3,6 @@ div.forEach((index) => {
   index.addEventListener("click", () => {
     const InputT = document.querySelector(".passI");
     const visible = index.getAttribute("data-visible");
-    console.log(visible === "true");
     if (visible === "true") {
       index.classList.add("active");
       index.classList.remove("closed");
@@ -22,9 +21,7 @@ const ham = document.querySelector(".ham");
 
 ham.addEventListener("click", () => {
   const list = document.querySelector("ul");
-console.log(list)
   let visibled = list.getAttribute("aria-expanded");
-  console.log(visibled === "false");
 
   if (visibled === "false") {
     ham.classList.add("close");
@@ -36,5 +33,20 @@ console.log(list)
     ham.classList.remove("close");
     ham.setAttribute("data-visible", "true");
     list.setAttribute("aria-expanded", "false");
+  }
+});
+
+const input = document.querySelector(".passI");
+const btn = document.querySelector(".btn");
+
+btn.addEventListener("click", () => {
+  let regexEmail = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+  const mil = document.querySelector("#mal").value;
+  if (regexEmail.test(mil)) {
+    alert("email is correct");
+    return true;
+  } else {
+    alert("What  are  you  doing  dude  enter a valid mail");
+    return false;
   }
 });
