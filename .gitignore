@@ -535,5 +535,7 @@ MigrationBackup/
 *.css.map
 *.sass.map
 *.scss.map
+scss/C
+.vscode/*
 
 # End of https://www.toptal.com/developers/gitignore/a
