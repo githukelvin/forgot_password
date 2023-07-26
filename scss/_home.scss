@@ -22,7 +22,7 @@ main {
     font-weight: 500;
     p {
       display: flex;
-      float: row;
+      flex-direction: row;
       gap: 1em;
       margin-bottom: 1em;
     }
